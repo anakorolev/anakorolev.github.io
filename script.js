@@ -1,110 +1,83 @@
 $(document).ready(function(){
 
-            $( ".visualart" ).click(function() {
-                $( ".index" ).hide( "slow" );
-                $( ".container" ).show( "slow" );
-                $(".cs").hide("slow");
-                $(".anim-div").hide("slow");
-                $(".ab-div").hide("slow");
-                $(".con-div").hide("slow");
-                $(".visualart").css("text-decoration", "underline");
-                $(".con").css("text-decoration", "none");
-                $(".name").css("text-decoration", "none");
-                $(".ab").css("text-decoration", "none");
-                $(".anim").css("text-decoration", "none");
-                $(".compsci").css("text-decoration", "none");
+            $( ".about" ).click(function() {
+                $( ".contact-text-container" ).hide( "slow" );
+                $( ".about-text-container" ).show( "slow" );
+                // $(".cs").hide("slow");
+                // $(".anim-div").hide("slow");
+                // $(".ab-div").hide("slow");
+                // $(".con-div").hide("slow");
+                $(".about").css("font-weight", "700");
+                $(".art").css("font-weight", "300");
+                $(".cs").css("font-weight", "300");
+                $(".contact").css("font-weight", "300");
+                $(".triangle-up").css("display", "block");
+                $(".triangle-up").css("bottom", "171px");
+                $(".triangle-up").css("left", "25%");
             });
 
-            $( ".name" ).click(function() {
-                $( ".index" ).show( "slow" );
-                $(".container").hide("slow");
-                $(".cs").hide("slow");
-                $(".anim-div").hide("slow");
-                $(".ab-div").hide("slow");
-                $(".con-div").hide("slow");
-                $(".name").css("text-decoration", "underline");
-                $(".con").css("text-decoration", "none");
-                $(".ab").css("text-decoration", "none");
-                $(".visualart").css("text-decoration", "none");
-                $(".anim").css("text-decoration", "none");
-                $(".compsci").css("text-decoration", "none");
+            $( ".logo" ).click(function() {
+                $( ".contact-text-container" ).hide( "slow" );
+                $( ".about-text-container" ).show( "slow" );
+                // $(".cs").hide("slow");
+                // $(".anim-div").hide("slow");
+                // $(".ab-div").hide("slow");
+                // $(".con-div").hide("slow");
+                $(".about").css("font-weight", "700");
+                $(".art").css("font-weight", "300");
+                $(".cs").css("font-weight", "300");
+                $(".contact").css("font-weight", "300");
+                $(".triangle-up").css("display", "block");
+                $(".triangle-up").css("bottom", "171px");
+                $(".triangle-up").css("left", "25%");
             });
 
-            $( ".compsci" ).click(function() {
-                $( ".cs" ).show( "slow" );
-                $( ".index" ).hide( "slow" );
-                $(".container").hide("slow");
-                $(".anim-div").hide("slow");
-                $(".ab-div").hide("slow");
-                $(".con-div").hide("slow");
-                $(".compsci").css("text-decoration", "underline");
-                $(".con").css("text-decoration", "none");
-                $(".name").css("text-decoration", "none");
-                $(".ab").css("text-decoration", "none");
-                $(".visualart").css("text-decoration", "none");
-                $(".anim").css("text-decoration", "none");
+            $( ".art" ).click(function() {
+                $( ".contact-text-container" ).hide( "slow" );
+                $(".about-text-container").show( "slow" );
+                // $(".cs").hide("slow");
+                // $(".anim-div").hide("slow");
+                // $(".ab-div").hide("slow");
+                // $(".con-div").hide("slow");
+                $(".about").css("font-weight", "300");
+                $(".art").css("font-weight", "700");
+                $(".cs").css("font-weight", "300");
+                $(".contact").css("font-weight", "300");
+                $(".triangle-up").css("display", "block");
+                $(".triangle-up").css("bottom", "234px");
+                $(".triangle-up").css("left", "26%");
             });
 
-            $( ".anim" ).click(function() {
-                $( ".anim-div" ).show( "slow" );
-                $( ".index" ).hide( "slow" );
-                $(".container").hide("slow");
-                $(".cs").hide("slow");
-                $(".ab-div").hide("slow");
-                $(".con-div").hide("slow");
-                $(".anim").css("text-decoration", "underline");
-                $(".con").css("text-decoration", "none");
-                $(".name").css("text-decoration", "none");
-                $(".ab").css("text-decoration", "none");
-                $(".visualart").css("text-decoration", "none");
-                $(".compsci").css("text-decoration", "none");
+            $( ".cs" ).click(function() {
+                $( ".contact-text-container" ).hide( "slow" );
+                $( ".about-text-container" ).show( "slow" );
+                // $(".cs").hide("slow");
+                // $(".anim-div").hide("slow");
+                // $(".ab-div").hide("slow");
+                // $(".con-div").hide("slow");
+                $(".about").css("font-weight", "300");
+                $(".art").css("font-weight", "300");
+                $(".cs").css("font-weight", "700");
+                $(".contact").css("font-weight", "300");
+                $(".triangle-up").css("display", "block");
+                $(".triangle-up").css("bottom", "234px");
+                $(".triangle-up").css("left", "73%");
             });
 
-            $( ".ab" ).click(function() {
-                $( ".ab-div" ).show( "slow" );
-                $( ".index" ).hide( "slow" );
-                $(".container").hide("slow");
-                $(".cs").hide("slow");
-                $(".anim-div").hide("slow");
-                $(".con-div").hide("slow");
-                $(".ab").css("text-decoration", "underline");
-                $(".con").css("text-decoration", "none");
-                $(".name").css("text-decoration", "none");
-                $(".visualart").css("text-decoration", "none");
-                $(".anim").css("text-decoration", "none");
-                $(".compsci").css("text-decoration", "none");
-            });
-
-            $( ".con" ).click(function() {
-                $( ".con-div" ).show( "slow" );
-                $( ".index" ).hide( "slow" );
-                $(".container").hide("slow");
-                $(".cs").hide("slow");
-                $(".anim-div").hide("slow");
-                $(".ab-div").hide("slow");
-                $(".con").css("text-decoration", "underline");
-                $(".name").css("text-decoration", "none");
-                $(".ab").css("text-decoration", "none");
-                $(".visualart").css("text-decoration", "none");
-                $(".anim").css("text-decoration", "none");
-                $(".compsci").css("text-decoration", "none");
-            });
-
-            $(".name, .visualart, .compsci, .anim, .ab, .con, .project1, .project2, .project3, .project4, .project5, .project6, .project7, .project8").hover(function(){
-                $(".name").css("cursor", "pointer");
-                $(".visualart").css("cursor", "pointer");
-                $(".compsci").css("cursor", "pointer");
-                $(".anim").css("cursor", "pointer");
-                $(".ab").css("cursor", "pointer");
-                $(".con").css("cursor", "pointer");
-            });
-
-            $(".toggle").click(function() {
-                if($(".toggleMenu").css('display') == 'none'){
-                    $(".toggleMenu").show("fast");
-                }else{
-                    $(".toggleMenu").hide("fast");
-                }
+            $( ".contact" ).click(function() {
+                $( ".contact-text-container" ).show( "slow" );
+                $( ".about-text-container" ).hide( "slow" );
+                // $(".cs").hide("slow");
+                // $(".anim-div").hide("slow");
+                // $(".ab-div").hide("slow");
+                // $(".con-div").hide("slow");
+                $(".about").css("font-weight", "300");
+                $(".art").css("font-weight", "300");
+                $(".cs").css("font-weight", "300");
+                $(".contact").css("font-weight", "700");
+                $(".triangle-up").css("display", "block");
+                $(".triangle-up").css("bottom", "171px");
+                $(".triangle-up").css("left", "76%");
             });
 
 
@@ -143,6 +116,26 @@ $('.prev').click(function() {
   }
   cycleItems();
 });
+
+    $(window).on("scroll", function(){
+        var scrollTop = $(window).scrollTop();
+        if(scrollTop > 10){
+            $(".circle-logo").css("position", "relative");
+            $(".circle-logo").css("right", "40%");
+            $(".line").css("width", "100%");
+            $(".menu-item").css("display", "inline");
+            $(".menu-item").css("margin-right", "25%");
+            $(".menu-item-right").css("margin-left", "0");
+            $(".menu-item-left").css("margin-right", "0");
+        }else{
+            $(".circle-logo").css("right", "0%");
+            $(".line").css("width", "70%");
+            $(".menu-item").css("display", "block");
+            $(".menu-item").css("margin-right", "0");
+            $(".menu-item-right").css("margin-left", "100px");
+            $(".menu-item-left").css("margin-right", "100px");
+        }
+    });
 
 
 });
