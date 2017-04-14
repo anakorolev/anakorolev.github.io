@@ -120,15 +120,15 @@ $('.prev').click(function() {
     $(window).on("scroll", function(){
         var scrollTop = $(window).scrollTop();
         if(scrollTop > 10){
-            $(".circle").css("position", "relative");
-            $(".circle").css("right", "40%");
+            $(".circle-logo").css("position", "relative");
+            $(".circle-logo").css("right", "40%");
             $(".line").css("width", "100%");
             $(".menu-item").css("display", "inline");
             $(".menu-item").css("margin-right", "25%");
             $(".menu-item-right").css("margin-left", "0");
             $(".menu-item-left").css("margin-right", "0");
         }else{
-            $(".circle").css("right", "0%");
+            $(".circle-logo").css("right", "0%");
             $(".line").css("width", "70%");
             $(".menu-item").css("display", "block");
             $(".menu-item").css("margin-right", "0");
