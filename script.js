@@ -2,11 +2,10 @@ $(document).ready(function(){
 
             $( ".about" ).click(function() {
                 $( ".contact-text-container" ).hide( "slow" );
-                $( ".about-text-container" ).show( "slow" );
-                // $(".cs").hide("slow");
-                // $(".anim-div").hide("slow");
-                // $(".ab-div").hide("slow");
-                // $(".con-div").hide("slow");
+                $(".about-text-container").show( "slow" );
+                $(".art-text-container").hide("slow");
+                $(".cs-text-container").hide("slow");
+
                 $(".about").css("font-weight", "700");
                 $(".art").css("font-weight", "300");
                 $(".cs").css("font-weight", "300");
@@ -18,11 +17,10 @@ $(document).ready(function(){
 
             $( ".logo" ).click(function() {
                 $( ".contact-text-container" ).hide( "slow" );
-                $( ".about-text-container" ).show( "slow" );
-                // $(".cs").hide("slow");
-                // $(".anim-div").hide("slow");
-                // $(".ab-div").hide("slow");
-                // $(".con-div").hide("slow");
+                $(".about-text-container").show( "slow" );
+                $(".art-text-container").hide("slow");
+                $(".cs-text-container").hide("slow");
+
                 $(".about").css("font-weight", "700");
                 $(".art").css("font-weight", "300");
                 $(".cs").css("font-weight", "300");
@@ -34,11 +32,10 @@ $(document).ready(function(){
 
             $( ".art" ).click(function() {
                 $( ".contact-text-container" ).hide( "slow" );
-                $(".about-text-container").show( "slow" );
-                // $(".cs").hide("slow");
-                // $(".anim-div").hide("slow");
-                // $(".ab-div").hide("slow");
-                // $(".con-div").hide("slow");
+                $(".about-text-container").hide( "slow" );
+                $(".art-text-container").show("slow");
+                $(".cs-text-container").hide("slow");
+
                 $(".about").css("font-weight", "300");
                 $(".art").css("font-weight", "700");
                 $(".cs").css("font-weight", "300");
@@ -50,11 +47,10 @@ $(document).ready(function(){
 
             $( ".cs" ).click(function() {
                 $( ".contact-text-container" ).hide( "slow" );
-                $( ".about-text-container" ).show( "slow" );
-                // $(".cs").hide("slow");
-                // $(".anim-div").hide("slow");
-                // $(".ab-div").hide("slow");
-                // $(".con-div").hide("slow");
+                $(".about-text-container").hide( "slow" );
+                $(".art-text-container").hide("slow");
+                $(".cs-text-container").show("slow");
+
                 $(".about").css("font-weight", "300");
                 $(".art").css("font-weight", "300");
                 $(".cs").css("font-weight", "700");
@@ -66,11 +62,10 @@ $(document).ready(function(){
 
             $( ".contact" ).click(function() {
                 $( ".contact-text-container" ).show( "slow" );
-                $( ".about-text-container" ).hide( "slow" );
-                // $(".cs").hide("slow");
-                // $(".anim-div").hide("slow");
-                // $(".ab-div").hide("slow");
-                // $(".con-div").hide("slow");
+                $(".about-text-container").hide( "slow" );
+                $(".art-text-container").hide("slow");
+                $(".cs-text-container").hide("slow");
+
                 $(".about").css("font-weight", "300");
                 $(".art").css("font-weight", "300");
                 $(".cs").css("font-weight", "300");
@@ -116,26 +111,47 @@ $('.prev').click(function() {
   }
   cycleItems();
 });
-
-    $(window).on("scroll", function(){
-        var scrollTop = $(window).scrollTop();
-        if(scrollTop > 10){
-            $(".circle-logo").css("position", "relative");
-            $(".circle-logo").css("right", "40%");
-            $(".line").css("width", "100%");
-            $(".menu-item").css("display", "inline");
-            $(".menu-item").css("margin-right", "25%");
-            $(".menu-item-right").css("margin-left", "0");
-            $(".menu-item-left").css("margin-right", "0");
+    // if(document.getElementById( 'menu-slide' ).style.right == '0px'){
+    //     $(".menu-item-container").fadeOut(0);
+    // }
+    
+    document.getElementById( 'slide' ).addEventListener( 'click', function() {
+        var menuItem = document.getElementById( 'menu-slide' );
+        if(this.style.right == '0px' && menuItem.style.left == '820px'){
+            this.style.right = '450px';
+            $(".menu-item-container").fadeIn(800);
+            menuItem.style.left = '390px';
         }else{
-            $(".circle-logo").css("right", "0%");
-            $(".line").css("width", "70%");
-            $(".menu-item").css("display", "block");
-            $(".menu-item").css("margin-right", "0");
-            $(".menu-item-right").css("margin-left", "100px");
-            $(".menu-item-left").css("margin-right", "100px");
+            this.style.right = '0px';
+            $(".menu-item-container").fadeOut(0);
+            menuItem.style.left = '820px';
         }
-    });
+
+    }, false );
+
+    // $(window).on("scroll", function(){
+    //     var scrollTop = $(window).scrollTop();
+    //     if(scrollTop > 10){
+    //         $(".circle-logo").css("position", "relative");
+    //         $(".circle-logo").css("right", "40%");
+    //         $(".line").css("width", "100%");
+    //         $(".line").css("bottom", "174px");
+    //         $(".menu-item").css("display", "inline");
+    //         $(".menu-item").css("margin-right", "25%");
+    //         $(".menu-item-right").css("margin-left", "0");
+    //         $(".menu-item-left").css("margin-right", "0");
+    //         $(".nav-bar").css("height", "55px");
+    //     }else{
+    //         $(".circle-logo").css("right", "0%");
+    //         $(".line").css("width", "70%");
+    //         $(".line").css("bottom", "60px");
+    //         $(".menu-item").css("display", "block");
+    //         $(".menu-item").css("margin-right", "0");
+    //         $(".menu-item-right").css("margin-left", "100px");
+    //         $(".menu-item-left").css("margin-right", "100px");
+    //         $(".nav-bar").css("height", "170px");
+    //     }
+    // });
 
 
 });
